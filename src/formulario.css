@@ -1,41 +1,47 @@
-#formulario{
-width:80%;
-margin: 0 auto;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+
+
+legend{
+    font-size:18px;
 }
 
+button{
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 1em 2em;
+    display: block;
+}
 
-#divlogin{
-    background-color: gray;
+#divlogin {
+    width: 100%;
+    background-color: white;
+}
+
+#formulario {
+    background-color: rgb(219, 212, 212);
+    width: 80%;
+    margin: 0 auto;
+}
+
+#buttonok {
+    background-color: rgb(88, 214, 88);
     color: white;
 }
 
-#buttonok{
-    
-background-color:rgb(88, 214, 88);
-color:white;
-border-style: none;
-cursor: pointer;
+#buttonok:hover {
+    background-color: white;
+    color: rgb(88, 214, 88);
 }
 
-#buttonok:hover{
-    background-color:white;
-    color:rgb(88, 214, 88);
-    }
-
-#buttonnot{
-    
-background-color: rgb(190, 112, 112);
-color: white;
-border-style: none; 
-cursor: pointer;
+#buttonnot {
+    background-color: rgb(190, 112, 112);
+    color: white;
 }
 
-#buttonnot:hover{
+#buttonnot:hover {
     background-color: white;
     color: rgb(190, 112, 112);
 
-    }
+}
