@@ -6,8 +6,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+
+        <h1>Nuevo Ejercicio</h1>
+
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Modificar <code>src/App.js</code> y guarda tu archivo y no necesitasr recargar la pagina.
         </p>
         <a
           className="App-link"
@@ -15,7 +18,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Aprende React y Utiliza la Documentación Oficial
         </a>
       </header>
     </div>
