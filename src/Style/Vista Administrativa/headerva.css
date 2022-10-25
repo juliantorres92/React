@@ -1,0 +1,124 @@
+html {
+  font-size: 62.5%; /** Reset para los REMS - 62.5% = 10px de 16 px, así podremos asignar el tamaño de la fuente en rem multiplicandolos x 10 **/
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 2;
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem; /**Igual a 120px**/
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.seccion {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/*Font weigth hace más delgada o gruesa la linea del texto, teniedo en cuenta que es una fuente de google font debemos usar los tamaños descargados 0-400, 0-700, 0-900*/
+.fw-300 {
+  font-weight: 300;
+}
+
+/*Con esta utilidad puedo usar la clase para centrar cualquier texto que necesite*/
+.centrar-texto {
+  text-align: center;
+}
+
+/*Habilitamos flexbox y ubicamos los elementos espaciados*/
+.contenedor-anuncios {
+  display: flex;
+  justify-content: space-between;
+  /*flex-wrap: se usa en el contenedor padre, permite que las columnas se desplacen hacia abajo una vez se complete el tamañp base*/
+  flex-wrap: wrap;
+}
+
+/*Centramos los tres cuadros aplicando el flex-basic y mediante el calc hacemos que el mismo css calcules un porcentaje de nuestra pantalla dejando un margen de 1rem o 10px de espacio.*/
+.anuncio {
+  /*flex-shrink: 0; desactivaria la opcion de que nuestros contenedores de anuncio se hagan mas pequeños del tamaño base en caso de ser posible*/
+  /*flex-grow: 0; desactivaria la opcion de que nuestros contenedores de anuncio se hagan mas grandes al tamaño base en caso de ser posible*/
+  /*flex-basis: calc(33.3% - 1rem); define la base del contenedor, dividiremos la pantalla en 3*/
+  flex: 0 0 calc(25% - 1rem);
+  /*border-style: solid;
+    border-color: #b5b5b5;
+    border-width: 1px;*/
+  border: 1px solid #b5b5b5;
+  background-color: #f5f5f5;
+  margin-bottom: 2rem;
+}
+
+/*Agregamos yn margen interno de 20 pixeles al contenido dentro de las tarjetas*/
+.contenido-anuncio {
+  /*padding-top: 2rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;*/
+  padding: 2rem;
+}
+
+/*Eliminamos las margenes por defecto de los h3 y los parrafos de las tarjetas de anuncios*/
+.contenido-anuncio h3,
+.contenido-anuncio p {
+  margin: 0;
+}
+
+/*El valor de font-weight (ancho de linea) por defecto de todos los parrafos p es 400 y el de todos los encabezados h1,2,3,4,5,6 es de 700*/
+.precio {
+  color: #71b100;
+  font-weight: 700;
+}
+
+.iconos {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+  max-width: 500px;
+}
+
+.iconos li {
+  /*flex: 1;*/
+  display: flex;
+}
+
+.iconos li img {
+  margin-right: 2rem;
+}
+
+.boton {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+}
+/*El cursor hover es simplemente para que cambie el tipo de cursor a la hora de pocisionarlo sobre el boton.*/
+.boton:hover {
+  cursor: pointer;
+}
+
+.boton.boton-amarillo {
+  background-color: #71b100;
+}
+
+.d-block {
+  display: block !important;
+}
